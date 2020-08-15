@@ -225,8 +225,11 @@
 }
 
 .row-statistics {
+    height: 100%;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+
 
 }
 
@@ -314,3 +317,152 @@
 
     color: var(--color-grey);
 }
+
+
+/*sekcja benefitów*/
+
+.benefits {
+    height: 100%;
+    width: 100%;
+
+}
+
+.benefits .container {
+
+
+}
+
+.row-benefits {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    position: relative;
+}
+
+.row-benefits__cnt {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 91px 35px;
+
+    position: relative;
+}
+
+.row-benefits__cnt::after {
+    content: "";
+    width: 328px;
+    border-bottom: 4px solid var(--color-redish);
+
+    position: absolute;
+    left: 35px;
+    bottom: 70px;
+}
+
+.row-benefits__cnt--sideimg::after {
+    content: "";
+    width: 328px;
+    border-bottom: 4px solid var(--color-green);
+
+    position: absolute;
+    left: 35px;
+    bottom: 70px;
+}
+
+.row-benefits__img {
+    width: 386px;
+    height: 100%;
+
+}
+
+.row-benefits__img--rectangle::after {
+    content: "";
+    width: 180px;
+    height: 180px;
+    background-color: var(--color-redish);
+    border-radius: 41px;
+    transform: rotate(45deg);
+
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 2;
+
+}
+
+.row-benefits__img--circle::after {
+    content: "";
+    width: 320px;
+    height: 320px;
+    background-color: var(--color-primary);
+    border-radius: 50%;
+
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 2;
+
+}
+
+.row-benefits--reverse {
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+
+.row-benefits--sideimg {
+    background-image: url("../assets/trumpet.png");
+    background-size: 33%;
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding-right: 50%;
+
+    position: relative;
+
+}
+
+.row-benefits__cnt--reverse::after {
+    content: "";
+    width: 328px;
+    border-bottom: 4px solid var(--color-green);
+
+    position: absolute;
+    left: 35px;
+    bottom: 70px;
+}
+
+.row-benefits--sideimg::after {
+    content: "";
+    width: 50%;
+    height: 100%;
+    background-color: var(--color-green);
+
+    position: absolute;
+    right: 0;
+    z-index: -1;
+}
+
+.row-benefits__cnt--sideimg {
+
+}
+
+.row-benefits__title {
+    color: var(--color-black);
+    font-family: var(--font-raleway);
+    font-size: 36px;
+    font-weight: 400;
+
+}
+
+.row-benefits__text {
+    color: var(--color-black);
+    font-family: var(--font-open);
+    font-size: 16px;
+    font-weight: 400;
+
+}
+
+
+
+
