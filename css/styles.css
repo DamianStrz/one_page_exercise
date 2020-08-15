@@ -30,6 +30,16 @@
 
 }
 
+.row {
+    display: flex;
+}
+
+.row .col {
+    flex-grow: 1;
+    margin: 0 10px;
+
+}
+
 /*header z logo i menu*/
 
 .page-header {
@@ -146,8 +156,6 @@
     justify-content: center;
 
 
-
-
 }
 
 .hero-title {
@@ -180,7 +188,6 @@
 
     background-color: var(--color-primary);
 
-
     border-radius: 40px;
     box-shadow: 5px 10px 14px 0 var(--color-primary-shadow);
 
@@ -190,4 +197,120 @@
     text-decoration: none;
     color: var(--color-white);
 
+}
+
+
+/*sekcja statystyk - > nie wyszło*/
+
+.statistics {
+    height: 100%;
+}
+
+.statistics .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.statistics-title {
+    padding-top: 100px;
+
+    font-family: var(--font-raleway);
+    font-size: 36px;
+    font-weight: 400;
+
+    color: var(--color-black);
+}
+
+.row-statistics {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.col-statistics {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+
+}
+
+.col-statistics__img {
+    position: relative;
+    height: 100%;
+
+}
+
+.col-statistics__icon {
+    height: 100%;
+    width: 100%;
+
+
+}
+
+.col-statistics__img-1::before {
+    content: "";
+    width: 63px;
+    height: 63px;
+    background-color: var(--color-redish);
+    border-radius: 50%;
+
+    position: absolute;
+    z-index: -1;
+    right: 30%;
+    top: 0;
+
+}
+
+.col-statistics__img-2::before {
+    content: "";
+    width: 63px;
+    height: 63px;
+    background-color: var(--color-primary);
+    border-radius: 50%;
+
+    position: absolute;
+    z-index: -1;
+    right: 30%;
+    top: 0;
+
+}
+
+.col-statistics__img-3::before {
+    content: "";
+    width: 63px;
+    height: 63px;
+    background-color: var(--color-green);
+    border-radius: 50%;
+
+    position: absolute;
+    z-index: -1;
+    right: 30%;
+    top: 0;
+
+}
+
+.col-statistics__title {
+
+    font-family: var(--font-raleway);
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: 5.96px;
+    color: var(--color-black);
+
+}
+
+.col-statistics__text {
+
+    font-family: var(--font-raleway);
+    font-size: 17px;
+    font-weight: 300;
+
+    color: var(--color-grey);
 }
