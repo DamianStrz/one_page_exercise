@@ -30,11 +30,15 @@
 
 }
 
+/*header z logo i menu*/
+
 .page-header {
     width: 100%;
     height: 70px;
     background: var(--color-white);
     box-shadow: 0 3px 6px #00000029;
+    position: absolute;
+    z-index: 1;
 
 }
 
@@ -119,4 +123,71 @@
 
 .main-menu__link:hover::after {
     opacity: 1;
+}
+
+/*sekcja otwierająca*/
+
+.hero {
+    height: calc(100% - 70px);
+    background-color: var(--color-white);
+
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+}
+
+.hero .container {
+    padding-top: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+
+
+}
+
+.hero-title {
+    font-family: var(--font-raleway);
+    font-weight: 400;
+    font-size: 49px;
+
+    text-transform: capitalize;
+
+    margin-bottom: 20px;
+
+    color: var(--color-black);
+}
+
+.hero-text {
+    font-family: var(--font-open);
+    font-weight: 400;
+    font-size: 16px;
+
+    margin-bottom: 38px;
+
+    color: var(--color-black);
+}
+
+.hero-btn {
+    display: inline-flex;
+    justify-content: center;
+    width: 440px;
+    padding: 22px;
+
+    background-color: var(--color-primary);
+
+
+    border-radius: 40px;
+    box-shadow: 5px 10px 14px 0 var(--color-primary-shadow);
+
+    font-family: var(--font-open);
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--color-white);
+
 }
