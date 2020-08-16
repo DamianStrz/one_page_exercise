@@ -665,7 +665,9 @@
 
 /*sekcja z formularzem kontaktowym*/
 
-.contact {}
+.contact {
+    margin-bottom: 78px;
+}
 .contact .container {
     width: 896px;
     display: flex;
@@ -822,6 +824,48 @@
     box-shadow: 5px 10px 14px 0 var(--color-primary-shadow);
 
 }
+
+.page-footer {
+    background: var(--color-white);
+    box-shadow: 0 -5px 40px #00000029;
+    position: absolute;
+    z-index: 1;
+}
+.page-footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 137px;
+}
+.footer-logo {
+    padding: 17px 0;
+
+}
+.footer-logo__text {
+    color: var(--color-primary);
+    font-family: var(--font-raleway);
+    font-weight: 300;
+    font-size: 26px;
+    text-decoration: none;
+}
+.footer-logo__copyright {
+    display: flex;
+    margin: 0;
+    padding-top: 7px;
+    color: var(--color-grey);
+    font-family: var(--font-open);
+    font-weight: 400;
+    font-size: 11px;
+    text-decoration: none;
+}
+.footer-icons {
+
+}
+.social-icon {
+    padding: 0 10px;
+    text-decoration: none;
+}
+.social-img {}
 
 
 
