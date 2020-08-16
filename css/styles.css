@@ -764,6 +764,7 @@
     border-bottom: 1px solid #95989A;
 
 }
+
 .form-right__checkbox {
     display: flex;
     /*justify-content: flex-start;*/
@@ -824,6 +825,8 @@
     box-shadow: 5px 10px 14px 0 var(--color-primary-shadow);
 
 }
+
+/*page footer*/
 
 .page-footer {
     background: var(--color-white);
