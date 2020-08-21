@@ -22,6 +22,10 @@
 
 }
 
+body {
+    background-color: var(--color-light-grey);
+}
+
 .container {
     width: 1300px;
     margin: 0 auto;
@@ -43,11 +47,11 @@
 /*header z logo i menu*/
 
 .page-header {
-    width: 100%;
+    /*width: 100%;*/
     height: 70px;
     background: var(--color-white);
     box-shadow: 0 3px 6px #00000029;
-    position: absolute;
+    position: relative;
     z-index: 1;
 
 }
@@ -57,7 +61,7 @@
     align-items: center;
     justify-content: space-between;
     height: 100%;
-    width: 100%;
+    /*width: 100%;*/
 }
 
 .page-logo {
@@ -204,6 +208,8 @@
 
 .statistics {
     height: 100%;
+    background-color: var(--color-white);
+    box-shadow: 0 -5px 80px #00000029;
 }
 
 .statistics .container {
@@ -211,6 +217,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+
 
 }
 
@@ -247,12 +255,14 @@
 .col-statistics__img {
     position: relative;
     height: 100%;
+    z-index: 1;
 
 }
 
 .col-statistics__icon {
     height: 100%;
     width: 100%;
+
 
 
 }
@@ -324,10 +334,13 @@
 .benefits {
     height: 100%;
     width: 100%;
+    background-color: var(--color-light-grey);
 
 }
 
 .benefits .container {
+  /*margin-top: 105px;*/
+    padding-top: 105px;
 
 
 }
@@ -336,8 +349,11 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    /*margin: 37px 0;*/
 
     position: relative;
+
+    background-color: var(--color-white);
 }
 
 .row-benefits__cnt {
@@ -470,7 +486,7 @@
     margin-top: 100px;
 
     background-color: var(--color-white);
-    margin-bottom: 155px;
+    /*margin-bottom: 155px;*/
 }
 .pricing .container {
 }
@@ -485,6 +501,7 @@
 
     color: var(--color-black);
 
+    padding-top: 100px;
     margin-bottom: 50px;
 }
 
@@ -667,6 +684,8 @@
 
 .contact {
     margin-bottom: 78px;
+    background-color: var(--color-white);
+    padding-top: 120px;
 }
 .contact .container {
     width: 896px;
@@ -829,9 +848,10 @@
 /*page footer*/
 
 .page-footer {
+    /*width: 100%;*/
     background: var(--color-white);
     box-shadow: 0 -5px 40px #00000029;
-    position: absolute;
+    position: relative;
     z-index: 1;
 }
 .page-footer .container {
