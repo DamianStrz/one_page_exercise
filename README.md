@@ -1,2 +1,2 @@
-# one_page_exercise
+# One Page - exercise from JavaScript Developer with React course.
 Example one-page layout
